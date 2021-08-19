@@ -103,18 +103,18 @@ st.markdown("# Food Demand Prediction")
 
 @st.cache
 def load_data(nrows):
-    data = pd.read_csv('/home/lokesh/Streamlit/App1/train.csv', nrows=nrows)
+    data = pd.read_csv('train.csv', nrows=nrows)
     return data
 
 @st.cache
 def load_center_data(nrows):
-    data = pd.read_csv('/home/lokesh/Streamlit/App1/fulfilment_center_info.csv', nrows=nrows)
+    data = pd.read_csv('fulfilment_center_info.csv', nrows=nrows)
     return data
 
 
 @st.cache
 def load_meal_data(nrows):
-    data = pd.read_csv('/home/lokesh/Streamlit/App1/meal_info.csv', nrows=nrows)
+    data = pd.read_csv('meal_info.csv', nrows=nrows)
     return data
 
 data_load_state = st.text('Loading Data...')
